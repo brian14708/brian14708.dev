@@ -1,0 +1,20 @@
+{
+	"extends": ["config:base"],
+	"lockFileMaintenance": {
+		"enabled": true
+	},
+	"packageRules": [
+		{
+			"matchUpdateTypes": [
+				"minor",
+				"patch",
+				"pin",
+				"digest",
+				"devDependencies",
+				"lockFileMaintenance"
+			],
+			"automerge": true
+		}
+	],
+	"automergeType": "branch"
+}

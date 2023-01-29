@@ -1,6 +1,7 @@
 {
-  "name": "@example/basics",
+  "name": "brian14708.dev",
   "type": "module",
+	"packageManager": "pnpm@7.26.2",
   "version": "0.0.1",
   "private": true,
   "scripts": {
