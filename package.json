@@ -1,7 +1,7 @@
 {
   "name": "brian14708.dev",
   "type": "module",
-	"packageManager": "pnpm@7.26.2",
+  "packageManager": "pnpm@7.26.2",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,9 +9,21 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "astro check && tsc --noEmit",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint .",
+    "lint:fix": "prettier --write --plugin-search-dir=. . && eslint --fix ."
   },
-  "dependencies": {
-    "astro": "^2.0.2"
+  "devDependencies": {
+    "astro": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.33.0",
+    "typescript": "^4.9.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-astro": "^0.23.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "prettier": "^2.8.3",
+    "prettier-plugin-astro": "^0.8.0"
   }
 }
